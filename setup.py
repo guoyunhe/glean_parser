@@ -36,13 +36,11 @@ requirements = [
 ]
 
 setup_requirements = [
-    "pytest-runner",
     "setuptools-scm<7; python_version<='3.6'",
     "setuptools-scm>=7; python_version>'3.6'",
 ]
 
 test_requirements = [
-    "pytest",
 ]
 
 setup(
