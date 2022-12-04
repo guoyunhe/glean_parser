@@ -206,7 +206,7 @@ def test_yaml_lint(capsys):
 
     assert len(nits) == 2
     # The second rule is empty because it's a syntax error.
-    assert set(["indentation", None, "trailing-spaces"]) == set(v.rule for v in nits)
+    assert set(["indentation", None]) == set(v.rule for v in nits)
 
     captured = capsys.readouterr()
     lines = captured.out.split("\n")
