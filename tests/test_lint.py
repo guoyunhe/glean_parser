@@ -204,7 +204,7 @@ def test_yaml_lint(capsys):
 
     nits = lint.lint_yaml_files(file_paths)
 
-    assert len(nits) == 3
+    assert len(nits) == 2
     # The second rule is empty because it's a syntax error.
     assert set(["indentation", None, "trailing-spaces"]) == set(v.rule for v in nits)
 
